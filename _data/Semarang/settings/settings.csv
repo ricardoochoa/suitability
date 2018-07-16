@@ -1,0 +1,27 @@
+layer,normalization_method,smaller_better,lowest_value,highest_value,weight,default_on
+Demographics: Population density,observe,FALSE,0,999,1,FALSE
+Economy: Commercial,observe,FALSE,0,800,1,FALSE
+Economy: Nighttime lights,observe,TRUE,0,999,1,FALSE
+Economy: Traditional markets,observe,TRUE,0,800,1,FALSE
+Education: Elementary Schools,reference,TRUE,0,1000,1,FALSE
+Education: High Schools,observe,TRUE,0,1000,1,FALSE
+Education: Higher Education,observe,TRUE,0,1000,1,FALSE
+Education: Junior High Schools,observe,TRUE,0,1000,1,FALSE
+Education: Kindergartens,observe,TRUE,0,500,1,FALSE
+Education: Vocational High,reference,TRUE,0,999,1,FALSE
+Health: Clinics,reference,TRUE,0,1500,1,FALSE
+Health: Hospitals,reference,TRUE,0,3000,1,TRUE
+Transit: Bus (Trans Semarang),reference,TRUE,0,300,1,FALSE
+Transit: Mini bus,reference,TRUE,0,300,1,FALSE
+Transit: Train stations,observe,TRUE,0,1000,1,FALSE
+Urban services: Cemeteries,observe,TRUE,0,999,1,FALSE
+Urban services: Cultural centers,reference,TRUE,0,100,1,FALSE
+Urban services: Fire Stations,observe,TRUE,0,999,1,FALSE
+Urban services: Goverment offices,observe,TRUE,0,999,1,FALSE
+Urban services: Green open space,reference,TRUE,0,100,1,FALSE
+Urban services: Libraries,observe,TRUE,0,999,1,FALSE
+Urban services: Places of Worship,reference,TRUE,0,1000,1,FALSE
+Urban services: Police Stations,observe,TRUE,0,999,1,FALSE
+Urban services: Post Offices,observe,TRUE,0,999,1,FALSE
+Urban services: Recreational Facilities,reference,TRUE,0,100,1,FALSE
+Urban services: Waste collection points,observe,TRUE,0,1000,1,FALSE
