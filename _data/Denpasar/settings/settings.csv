@@ -1,6 +1,6 @@
 layer,normalization_method,smaller_better,lowest_value,highest_value,weight,default_on
-Demographics: Population density,observe,FALSE,0,999,1,FALSE
-Economy: Commercial,observe,FALSE,0,800,1,FALSE
+Population: Density,observe,FALSE,0,999,1,FALSE
+Economy: Commercial,observe,TRUE,0,800,1,FALSE
 Economy: Nighttime lights,observe,TRUE,0,999,1,FALSE
 Economy: Traditional markets,observe,TRUE,0,800,1,FALSE
 Education: Elementary Schools,reference,TRUE,0,1000,1,FALSE
@@ -11,7 +11,7 @@ Education: Kindergartens,observe,TRUE,0,500,1,FALSE
 Education: Vocational High,reference,TRUE,0,999,1,FALSE
 Health: Clinics,reference,TRUE,0,1500,1,FALSE
 Health: Hospitals,reference,TRUE,0,3000,1,TRUE
-Transit: Bus (Trans Sarbagita),reference,TRUE,0,300,1,FALSE
+Transit: Bus (Trans Sarbagita),reference,FALSE,0,300,1,FALSE
 Transit: Mini bus (Angkutan),reference,TRUE,0,300,1,FALSE
 Urban services: Cemeteries,observe,TRUE,0,999,1,FALSE
 Urban services: Cultural centers,reference,TRUE,0,100,1,FALSE
@@ -23,3 +23,5 @@ Urban services: Places of Worship,reference,TRUE,0,1000,1,FALSE
 Urban services: Police Stations,observe,TRUE,0,999,1,FALSE
 Urban services: Post Offices,observe,TRUE,0,999,1,FALSE
 Urban services: Recreational Facilities,reference,TRUE,0,100,1,FALSE
+Geography: Elevation,observe,TRUE,0,999,1,FALSE
+Geography: Slope,observe,TRUE,0,1,1,FALSE
