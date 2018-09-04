@@ -38,5 +38,5 @@ Disaster: Subsidence (10-12 cm/y),Land_subsidence_10_to_12.tif,Polygon; land sub
 Disaster: Subsidence (12-more cm/y),Land_subsidence_12_or_more.tif,Polygon; land subsidence zones.
 Disaster: Landslides (risk-free),LC_Sem_Landslide_free.tif,Polygon; landslides risk-free zones.
 Disaster: Landslides,LC_Sem_Landslide.tif,Polygon; landslides zones.
-Disaster: Flooding Risk,LC_Sem_Flooding_Risk.tif,Polygon; flooding risk zones.
 Disaster: Flooding Risk (risk-free),LC_Sem_Flooding_Risk_free.tif,Polygon; flooding risk-free zones.
+Disaster: Flooding Risk,LC_Sem_Flooding_Risk.tif,Polygon; flooding risk zones.
