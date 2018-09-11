@@ -29,6 +29,7 @@ Land Cover: Residential no data,LC_Sem_Res_no_data.tif,Polygon; residential land
 Land Use: Residential High Density,Sem_Res_high_density.tif,Polygon; high density residential.
 Land Use: Residential Low Density,Sem_Res_low_density.tif,Polygon; low density residential.
 Land Use: Residential Medium Density,Sem_Res_med_density.tif,Polygon; medium density residential.
+Housing: Dillapidated Housing,Dillap_housing.tif,Polygon; areas with dillapidated housing.
 Disaster: Subsidence (00-01 cm/y),Land_subsidence_00_to_01.tif,Polygon; land subsidence zones.
 Disaster: Subsidence (01-04 cm/y),Land_subsidence_01_to_04.tif,Polygon; land subsidence zones.
 Disaster: Subsidence (04-06 cm/y),Land_subsidence_04_to_06.tif,Polygon; land subsidence zones.
