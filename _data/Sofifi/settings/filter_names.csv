@@ -1,0 +1,2 @@
+filter,preprocessed_raster,description
+dummy_filter,dummy_filter.tif,Dummy filter

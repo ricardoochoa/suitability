@@ -1,0 +1,8 @@
+layer,normalization_method,smaller_better,lowest_value,highest_value,weight,default_on
+Pendidikan_Dasar,observe,TRUE,0,1,1,FALSE
+Pendidikan_Menengah_Pertama,observe,TRUE,0,1,1,FALSE
+Pendidikan_Menengah_Umum,observe,TRUE,0,1,1,FALSE
+Poliklinik_Polindes_Posyandu,observe,TRUE,0,1,1,FALSE
+Puskesmas_Puskesmas_Pembantu,observe,TRUE,0,1,1,FALSE
+Rumah_Sakit_Khusus,observe,TRUE,0,1,1,FALSE
+Rumah_Sakit_Umum,observe,TRUE,0,1,1,FALSE

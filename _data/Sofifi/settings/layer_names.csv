@@ -1,0 +1,8 @@
+layer,preprocessed_raster,description
+Pendidikan_Dasar,Pendidikan_Dasar.tif,ATR data
+Pendidikan_Menengah_Pertama,Pendidikan_Menengah_Pertama.tif,ATR data
+Pendidikan_Menengah_Umum,Pendidikan_Menengah_Umum.tif,ATR data
+Poliklinik_Polindes_Posyandu,Poliklinik_Polindes_Posyandu.tif,ATR data
+Puskesmas_Puskesmas_Pembantu,Puskesmas_Puskesmas_Pembantu.tif,ATR data
+Rumah_Sakit_Khusus,Rumah_Sakit_Khusus.tif,ATR data
+Rumah_Sakit_Umum,Rumah_Sakit_Umum.tif,ATR data
