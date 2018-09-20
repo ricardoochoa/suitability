@@ -121,7 +121,7 @@ cheer_up <- c("#C44D58",
               "#556270")
 
 pal <- colorNumeric(palette = cheer_up, 
-                    domain = 0:100, 
+                    domain = -1:101, 
                     na.color = "transparent")
 
 footer <- p("This tool was developed under the", a("World Bank Group's", href="http://www.worldbank.org", target="_blank"), " City Planning Labs intitiative, by ", 

@@ -138,14 +138,17 @@ shinyServer(function(input, output, session) {
       indexed_raster[indexed_raster < input$subset_score[1]] <- NA
       indexed_raster[indexed_raster > input$subset_score[2]] <- NA
       
+      ### ROS!
+      print(indexed_raster)
+      
       leaflet() %>% 
         addProviderTiles(input$map_type) %>% 
         addRasterImage(indexed_raster, 
                        colors = pal,
                        opacity = as.numeric(input$transparency)) %>%
-        addLegend(pal = pal, 
-                  values = 0:100, 
-                  title = "Index", 
+        addLegend(pal = pal,
+                  values = 0:100,
+                  title = "Index",
                   position = "bottomright")
     }
     
