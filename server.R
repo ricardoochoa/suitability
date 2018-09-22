@@ -22,7 +22,7 @@ shinyServer(function(input, output, session) {
     checkboxGroupInput("selected_filter_names", label = h3("Filters"),
                        choices = as.list(read_csv(paste0("_data/",
                                                  input$select_data,
-                                                 "/settings/filter_names.csv"))$filter)
+                                                 "/settings/filters.csv"))$filter)
                          )
   })
   
@@ -43,7 +43,7 @@ shinyServer(function(input, output, session) {
   names_dataframe <- reactive({
     read_csv(paste0("_data/",
                     input$select_data,
-                    "/settings/layer_names.csv"))
+                    "/settings/layers.csv"))
   })
   
   output$settings_table <- renderRHandsontable({
@@ -62,7 +62,7 @@ shinyServer(function(input, output, session) {
   selected_filters <- reactive({
     if(length(input$selected_filter_names) == 0){
       return(1)} else {
-      filter_dataframe <- read_csv(paste0("_data/", input$select_data, "/settings/filter_names.csv"))
+      filter_dataframe <- read_csv(paste0("_data/", input$select_data, "/settings/filters.csv"))
       selected_filter_files <- paste0("_data/",
                                       input$select_data, 
                                       "/filters/", 
@@ -138,9 +138,6 @@ shinyServer(function(input, output, session) {
       indexed_raster[indexed_raster < input$subset_score[1]] <- NA
       indexed_raster[indexed_raster > input$subset_score[2]] <- NA
       
-      ### ROS!
-      print(indexed_raster)
-      
       leaflet() %>% 
         addProviderTiles(input$map_type) %>% 
         addRasterImage(indexed_raster, 
@@ -177,7 +174,7 @@ shinyServer(function(input, output, session) {
   output$data_tab_select_layers = renderUI({
     all_layers = 
             tryCatch(
-              expr = read_csv(paste0("_data/", input$select_data, "/settings/layer_names.csv"))$layer, 
+              expr = read_csv(paste0("_data/", input$select_data, "/settings/layers.csv"))$layer, 
               error = function(e){return("Loading...")}, 
               warning = function(w){return("Loading...")})
 
@@ -189,7 +186,7 @@ shinyServer(function(input, output, session) {
     the_text = 
       tryCatch(as.character(read.csv(file = paste0("_data/",
                                                  input$select_data, 
-                                                 "/settings/layer_names.csv"),
+                                                 "/settings/layers.csv"),
                                    row.names = 1)[input$data_tab_selected_layer, 
                                                   "description"]), 
              error = function(e){return("Loading...")}, 
@@ -209,7 +206,7 @@ shinyServer(function(input, output, session) {
                     "/layers/",
                     as.character(read.csv(file = paste0("_data/",
                                                         input$select_data,
-                                                        "/settings/layer_names.csv"),
+                                                        "/settings/layers.csv"),
                                           row.names = 1)[input$data_tab_selected_layer, "preprocessed_raster"])))
     }, warning = function(w) {
       something_went_wrong()
@@ -286,7 +283,7 @@ shinyServer(function(input, output, session) {
                                           label = h3("Filters"),
                                           choices = as.list(read_csv(paste0("_data/",
                                                                             input$select_data,
-                                                                            "/settings/filter_names.csv"))$filter)
+                                                                            "/settings/filters.csv"))$filter)
                  )
                  
   })

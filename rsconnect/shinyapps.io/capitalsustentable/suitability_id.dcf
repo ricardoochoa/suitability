@@ -1,0 +1,12 @@
+name: suitability_id
+title: suitability_id
+username:
+account: capitalsustentable
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 363290
+bundleId: 1600020
+url: https://capitalsustentable.shinyapps.io/suitability_id/
+when: 1537651895.0173
+asMultiple: FALSE
+asStatic: FALSE

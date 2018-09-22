@@ -156,30 +156,3 @@ something_went_wrong <- function(){
   projection(sww) <- CRS("+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs")
   return(sww)
 }
-
-# data_tab <- function(select_data, data_tab_selected_layer){
-# 
-#   data_tab_layer = read.csv(file = paste0("_data/",
-#                                           select_data,
-#                                           "/settings/layer_names.csv"),
-#                             row.names = 1)
-# 
-#   the_row = data_tab_selected_layer
-# 
-#   # raster
-#   the_raster_file = as.character(data_tab_layer[the_row, "preprocessed_raster"])
-#   the_raster_path = paste0("_data/",
-#                            select_data,
-#                            "/layers/raster/",
-#                            the_raster_file)
-# 
-#   the_raster = raster(the_raster_path)
-# 
-#   the_palette <- colorNumeric(cheer_up, values(the_raster),
-#                        na.color = "transparent")
-#   answer <- list()
-#   answer$the_raster <- the_raster
-#   answer$the_palette <- the_palette
-# 
-#   return(answer)
-# }
