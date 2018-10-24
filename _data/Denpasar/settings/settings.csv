@@ -1,27 +1,29 @@
 layer,normalization_method,smaller_better,lowest_value,highest_value,weight,default_on
-Economy: Commercial,observe,TRUE,0,800,1,FALSE
-Economy: Nighttime lights,observe,TRUE,0,999,1,FALSE
-Economy: Traditional markets,observe,TRUE,0,800,1,FALSE
-Education: Elementary Schools,reference,TRUE,0,1000,1,FALSE
-Education: High Schools,observe,TRUE,0,1000,1,FALSE
-Education: Higher Education,observe,TRUE,0,1000,1,FALSE
-Education: Junior High Schools,observe,TRUE,0,1000,1,FALSE
-Education: Kindergartens,observe,TRUE,0,500,1,FALSE
-Education: Vocational High,reference,TRUE,0,999,1,FALSE
-Geography: Elevation,observe,TRUE,0,999,1,FALSE
-Geography: Slope,observe,TRUE,0,1,1,FALSE
-Health: Clinics,reference,TRUE,0,1500,1,FALSE
-Health: Hospitals,reference,TRUE,0,3000,1,TRUE
-Population: Density,observe,FALSE,0,999,1,FALSE
-Transit: Bus (Trans Sarbagita),reference,FALSE,0,300,1,FALSE
-Transit: Mini bus (Angkutan),reference,TRUE,0,300,1,FALSE
-Urban services: Cemeteries,observe,TRUE,0,999,1,FALSE
-Urban services: Cultural centers,reference,TRUE,0,100,1,FALSE
-Urban services: Fire Stations,observe,TRUE,0,999,1,FALSE
-Urban services: Goverment offices,observe,TRUE,0,999,1,FALSE
-Urban services: Green open space,reference,TRUE,0,100,1,FALSE
-Urban services: Libraries,observe,TRUE,0,999,1,FALSE
-Urban services: Places of Worship,reference,TRUE,0,1000,1,FALSE
-Urban services: Police Stations,observe,TRUE,0,999,1,FALSE
-Urban services: Post Offices,observe,TRUE,0,999,1,FALSE
-Urban services: Recreational Facilities,reference,TRUE,0,100,1,FALSE
+Ekonomi: Bangunan komersial,observe,TRUE,0,800,1,FALSE
+Ekonomi: Lampu malam hari,observe,TRUE,0,999,1,FALSE
+Ekonomi: Pasar tradisional,observe,TRUE,0,800,1,FALSE
+Pendidikan: SD,reference,TRUE,0,1000,1,FALSE
+Pendidikan: SMA,observe,TRUE,0,1000,1,FALSE
+Pendidikan: Universitas/Perguruan Tinggi,observe,TRUE,0,1000,1,FALSE
+Pendidikan: SMP,observe,TRUE,0,1000,1,FALSE
+Pendidikan: TK,observe,TRUE,0,500,1,FALSE
+Pendidikan: SMK,reference,TRUE,0,999,1,FALSE
+Geography: MDPL (Ketinggian),observe,TRUE,0,999,1,FALSE
+Geography: Lereng,observe,TRUE,0,1,1,FALSE
+Kesehatan: Puskemas,reference,TRUE,0,1500,1,FALSE
+Kesehatan: Rumah Sakit (jarak linier),reference,TRUE,0,3000,1,TRUE
+"Kesehatan: Rumah sakit (waktu, tebakan terbaik)",observe,TRUE,0,999,1,FALSE
+"Kesehatan: Rumah sakit (waktu, dengan kemacetan)",observe,TRUE,0,999,1,FALSE
+Demografi: Kepadatan penduduk,observe,FALSE,0,999,1,FALSE
+Transportasi: Trans Sarbagita,reference,FALSE,0,300,1,FALSE
+Transportasi: Angkutan,reference,TRUE,0,300,1,FALSE
+Layanan perkotaan: Pemakaman,observe,TRUE,0,999,1,FALSE
+Layanan perkotaan: Pusat budaya,reference,TRUE,0,100,1,FALSE
+Layanan perkotaan: Stasiun api,observe,TRUE,0,999,1,FALSE
+Layanan perkotaan: Kantor pemerintahan,observe,TRUE,0,999,1,FALSE
+Lingkungan: Ruang terbuka hijau,reference,TRUE,0,100,1,FALSE
+Layanan perkotaan: Perpustakaan,observe,TRUE,0,999,1,FALSE
+Layanan perkotaan: Tempat beribadah,reference,TRUE,0,1000,1,FALSE
+Layanan perkotaan: Pos polisi,observe,TRUE,0,999,1,FALSE
+Layanan perkotaan: Kantor pos,observe,TRUE,0,999,1,FALSE
+Layanan perkotaan: Fasilitas rekreasi,reference,TRUE,0,100,1,FALSE

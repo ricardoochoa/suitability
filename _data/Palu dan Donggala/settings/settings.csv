@@ -1,0 +1,9 @@
+layer,normalization_method,smaller_better,lowest_value,highest_value,weight,default_on
+Bangunan terdampak,observe,TRUE,0,1,1,FALSE
+Bangunan gedung,observe,TRUE,0,1,1,FALSE
+Built-up area in 1990,observe,TRUE,0,1,1,FALSE
+Built-up area in 2000,observe,TRUE,0,1,1,FALSE
+Built-up area in 2014,observe,TRUE,0,1,1,FALSE
+Elevation,reference,FALSE,5,1000,1,TRUE
+Nighttime lights,observe,TRUE,0,999,1,FALSE
+Slope,reference,TRUE,0,0.45,1,TRUE

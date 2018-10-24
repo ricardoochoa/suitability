@@ -5,8 +5,8 @@ account: capitalsustentable
 server: shinyapps.io
 hostUrl: https://api.shinyapps.io/v1
 appId: 363290
-bundleId: 1600020
+bundleId: 1624669
 url: https://capitalsustentable.shinyapps.io/suitability_id/
-when: 1537651895.0173
+when: 1538731026.72293
 asMultiple: FALSE
 asStatic: FALSE

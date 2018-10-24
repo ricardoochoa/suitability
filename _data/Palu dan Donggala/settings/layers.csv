@@ -1,0 +1,9 @@
+layer,preprocessed_raster,description
+Bangunan terdampak,bangunan_terdampak.tif,Data retrived from AWS tile services and values calculated with R’s elevatr packgage.
+Bangunan gedung,BangunanGedung.tif,Data retrived from AWS tile services and values calculated with R’s elevatr packgage.
+Built-up area in 1990,built_up_1990.tif,"Built-up area in 1990 boolean values, retrived from GHSL data"
+Built-up area in 2000,built_up_2000.tif,"Built-up area in 2000 boolean values, retrived from GHSL data"
+Built-up area in 2014,built_up_2014.tif,"Built-up area in 2014 boolean values, retrived from GHSL data"
+Elevation,elevation_2018.tif,"Elevation in meters above the sea level, retrived from AWS tile services"
+Nighttime lights,nighttime_lights_2017.tif,"Nighttime lights, retrived from NOAA"
+Slope,slope_2018.tif,"Slope, data retrived from AWS tile services and values calculated with R’s elevatr packgage."
