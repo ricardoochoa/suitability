@@ -1,24 +1,26 @@
 layer,preprocessed_raster,description
-Bangunan terdampak,bangunan_terdampak.tif,Peta Terdampak Gempa Bumi dan Tsunami: Bangunan terdampak. Data retrieved from B.I.G. portal. 
-Built-up area in 1990,built_up_1990.tif,"Built-up area in 1990 boolean values, retrived from GHSL data"
-Built-up area in 2000,built_up_2000.tif,"Built-up area in 2000 boolean values, retrived from GHSL data"
-Built-up area in 2014,built_up_2014.tif,"Built-up area in 2014 boolean values, retrived from GHSL data"
-Elevation,elevation_2018.tif,"Elevation in meters above the sea level, retrived from AWS tile services"
-Nighttime lights,nighttime_lights_2017.tif,"Nighttime lights, retrived from NOAA"
-Slope,slope_2018.tif,"Slope, data retrived from AWS tile services and values calculated with R’s elevatr packgage."
-Distance to roads,jalan_distance.tif,Distance to closest road in meters
-Pendidikan Agama Islam,Pendidikan_Agama_Islam_(Pesantren).tif,Point data retrived from BIG’s portal
-Pendidikan Dasar ,Pendidikan_Dasar.tif,Point data retrived from BIG’s portal
-Pendidikan Luar Sekolah ,Pendidikan_Luar_Sekolah.tif,Point data retrived from BIG’s portal
-Pendidikan Menengah Pertama ,Pendidikan_Menengah_Pertama.tif,Point data retrived from BIG’s portal
-Pendidikan Menengah Umum ,Pendidikan_Menengah_Umum.tif,Point data retrived from BIG’s portal
-Pendidikan PoliteknikKejuruan ,Pendidikan_PoliteknikKejuruan.tif,Point data retrived from BIG’s portal
-Pendidikan Taman Kanak,Pendidikan_Taman_Kanak-kanak.tif,Point data retrived from BIG’s portal
-Pendidikan Tinggi ,Pendidikan_Tinggi.tif,Point data retrived from BIG’s portal
-PendidikanPenelitian Lainnya ,PendidikanPenelitian_Lainnya.tif,Point data retrived from BIG’s portal
-Pusat Bisnis dan Perdagangan Lainnya ,Pusat_Bisnis_dan_Perdagangan_Lainnya.tif,Point data retrived from BIG’s portal
-Pusat Perdagangan Tradisional,Pusat_Perdagangan_Tradisional_(Pasar_EceranGrosir-Induk).tif,Point data retrived from BIG’s portal
-Rumah Sakit  Bersalin ,Rumah_Sakit__Bersalin.tif,Point data retrived from BIG’s portal
-Rumah Sakit  Mata ,Rumah_Sakit__Mata.tif,Point data retrived from BIG’s portal
-Rumah Sakit Umum ,Rumah_Sakit_Umum.tif,Point data retrived from BIG’s portal
-Distance to water bodies,water_bodies.tif,Lines data retrived from BIG’s portal
+Ekonomi: Lampu malam hari,Ekonomi_Lampu_malam_hari.tif,"Nighttime lights, retrived from NOAA"
+Ekonomi: Pusat Bisnis dan Perdagangan Lainnya,Ekonomi_Pusat_Bisnis_dan_Perdagangan_Lainnya.tif,Point data retrived from BIG’s portal
+Ekonomi: Pusat Perdagangan Tradisional,Ekonomi_Pusat_Perdagangan_Tradisional_Pasar_Eceran_Grosir_Induk.tif,Point data retrived from BIG’s portal
+Geografi: Lereng,Geografi_Lereng.tif,"Slope, data retrived from AWS tile services and values calculated with R’s elevatr packgage."
+Geografi: MDPL (Ketinggian),Geografi_MDPL_Ketinggian.tif,"Elevation in meters above the sea level, retrived from AWS tile services"
+Pendidikan: Agama Islam,Pendidikan_Agama_Islam_(Pesantren).tif,Point data retrived from BIG’s portal
+Pendidikan: Dasar,Pendidikan_Dasar.tif,Point data retrived from BIG’s portal
+Pendidikan: Luar Sekolah,Pendidikan_Luar_Sekolah.tif,Point data retrived from BIG’s portal
+Pendidikan: Menengah Pertama,Pendidikan_Menengah_Pertama.tif,Point data retrived from BIG’s portal
+Pendidikan: Menengah Umum,Pendidikan_Menengah_Umum.tif,Point data retrived from BIG’s portal
+Pendidikan: Penelitian Lainnya,Pendidikan_Penelitian_Lainnya.tif,Point data retrived from BIG’s portal
+Pendidikan: PoliteknikKejuruan,Pendidikan_PoliteknikKejuruan.tif,Point data retrived from BIG’s portal
+Pendidikan: Taman Kanak,Pendidikan_Taman_Kanak-kanak.tif,Point data retrived from BIG’s portal
+Pendidikan: Tinggi,Pendidikan_Tinggi.tif,Point data retrived from BIG’s portal
+Permukiman: Built-up area in 1990,Permukiman_built_up_1990.tif,"Built-up area in 1990 boolean values, retrived from GHSL data"
+Permukiman: Built-up area in 2000,Permukiman_built_up_2000.tif,"Built-up area in 2000 boolean values, retrived from GHSL data"
+Permukiman: Built-up area in 2014,Permukiman_built_up_2014.tif,"Built-up area in 2014 boolean values, retrived from GHSL data"
+Permukiman: Jarak ke jalan,Permukiman_Jarak_ke_jalan.tif,Distance to closest road in meters
+Risiko bencana: Jarak ke badan air,Risiko bencana_Jarak_ke_badan_air.tif,Lines data retrived from BIG’s portal
+Risiko bencana: Bangunan terdampak,Risiko_bencana_bangunan_terdampak.tif,Peta Terdampak Gempa Bumi dan Tsunami: Bangunan terdampak. Data retrieved from B.I.G. portal. 
+Risiko bencana: Jarak ke area yang likuifaksi,Risiko_bencana_Jarak ke_area_yang_likuifaksi.tif,Proximity in meters. Data fretrived from BIG’s portal
+Risiko bencana: Jarak ke daerah yang terkena dampak,Risiko_bencana_Jarak_ke_daerah_yang_terkena_dampak.tif,Proximity in meters. Data fretrived from BIG’s portal
+Rumah Sakit: Bersalin ,Rumah_Sakit_Bersalin.tif,Point data retrived from BIG’s portal
+Rumah Sakit: Mata ,Rumah_Sakit_Mata.tif,Point data retrived from BIG’s portal
+Rumah Sakit: Umum ,Rumah_Sakit_Umum.tif,Point data retrived from BIG’s portal

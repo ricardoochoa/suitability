@@ -1,16 +1,16 @@
 filter,preprocessed_raster,description
-Daerah Terdampak,daerah_terdampak.tif,Data retrived from BIG portal
-Likuifaksi Balaroa,likuifaksi_balaroa.tif,Data retrived from BIG portal
-Likuifaksi Petobo,likuifaksi_petobo.tif,Data retrived from BIG portal
-Likuifaksi Sidera JonoObe,likuifaksi_sidera_jonoObe.tif,Data retrived from BIG portal
-Air Tawar Sungai,Air_Tawar_Sungai.tif,Data retrived from BIG portal
-Bangunan / Gedung,BangunanGedung.tif,Data retrived from BIG portal
-Hutan Rimba,Hutan_Rimba.tif,Data retrived from BIG portal
-Pasir / Bukit Pasir Darat,PasirBukit_Pasir_Darat.tif,Data retrived from BIG portal
-Pasir / Bukit Pasir Laut,PasirBukit_Pasir_Laut.tif,Data retrived from BIG portal
-Perkebunan / Kebun            ,PerkebunanKebun.tif,Data retrived from BIG portal
-Permukiman dan Tempat Kegiatan,Permukiman_dan_Tempat_Kegiatan.tif,Data retrived from BIG portal
-Sawah,Sawah.tif,Data retrived from BIG portal
-Semak Belukar / Alang Alang,Semak_BelukarAlang_Alang.tif,Data retrived from BIG portal
-Tanah Kosong / Gundul,Tanah_KosongGundul.tif,Data retrived from BIG portal
-Tegalan / Ladang,TegalanLadang.tif,Data retrived from BIG portal
+Air tawar sungai,Air_tawar_sungai.tif,Freshwater river
+Bangunan / Gedung,Bangunan_Gedung.tif,Building
+Daerah terdampak,Daerah_terdampak.tif,Affected area
+Hutan rimba,Hutan_rimba.tif,Jungle
+Likuifaksi: Balaroa,Likuifaksi_balaroa.tif,Soil liquefaction: Balaroa
+Likuifaksi: Petobo,Likuifaksi_petobo.tif,Soil liquefaction: Petobo
+Likuifaksi: Sidera JonoObe,Likuifaksi_sidera_jonoObe.tif,Soil liquefaction: Sidera JonoObe
+Pasir / Bukit pasir darat,Pasir_Bukit_pasir_darat.tif,Sand / Sand dunes
+Pasir / Bukit pasir laut,Pasir_Bukit_pasir_laut.tif,Sand / sea sand hill
+Perkebunan / Kebun            ,Perkebunan_Kebun.tif,Plantation / Gardens
+Permukiman dan tempat kegiatan,Permukiman_dan_tempat_kegiatan.tif,Settlement and place of activity
+Sawah,Sawah.tif,Rice fields
+Semak belukar / Alang alang,Semak_belukar_Alang_alang.tif,Shrubs / Alang alang
+Tanah kosong / Gundul,Tanah_kosong_gundul.tif,Empty / Bald land
+Tegalan / Ladang,Tegalan_ladang.tif,Field
