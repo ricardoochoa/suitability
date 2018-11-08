@@ -156,3 +156,10 @@ something_went_wrong <- function(){
   projection(sww) <- CRS("+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs")
   return(sww)
 }
+
+get_cities <- function(){
+  filenames <- getURL(ftp, userpwd = paste(usr, pas, sep = ":"), 
+                      ftp.use.epsv = FALSE, 
+                      dirlistonly = TRUE) #reading filenames from ftp-server
+  return(strsplit(filenames, "\r*\n")[[1]])
+}
