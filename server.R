@@ -5,7 +5,7 @@ shinyServer(function(input, output, session) {
   
   settings_dataframe <- reactive({
     if(is.null(input$settings_table)){
-      return(read_csv(paste0("_data/",
+      return(read_csv(paste0(data_folder,
                       input$select_data,
                       "/settings/settings.csv"), 
                       col_types = cols(normalization_method = col_factor(levels = c("observe", "reference", "standardize")), 
@@ -20,7 +20,7 @@ shinyServer(function(input, output, session) {
   output$filter_checkboxgroup <- renderUI({
     
     checkboxGroupInput("selected_filter_names", label = h3("Filters"),
-                       choices = as.list(read_csv(paste0("_data/",
+                       choices = as.list(read_csv(paste0(data_folder,
                                                  input$select_data,
                                                  "/settings/filters.csv"))$filter)
                          )
@@ -29,7 +29,7 @@ shinyServer(function(input, output, session) {
   # Layers checkbox group
   output$layer_checkboxgroup <- renderUI({
     
-    temp_df <- read_csv(paste0("_data/", input$select_data, "/settings/settings.csv"))
+    temp_df <- read_csv(paste0(data_folder, input$select_data, "/settings/settings.csv"))
     all_layers <- as.list(temp_df$layer)
     default_on <- as.list(temp_df[which(temp_df$default_on == TRUE),]$layer)
     
@@ -41,7 +41,7 @@ shinyServer(function(input, output, session) {
   })
     
   names_dataframe <- reactive({
-    read_csv(paste0("_data/",
+    read_csv(paste0(data_folder,
                     input$select_data,
                     "/settings/layers.csv"))
   })
@@ -62,8 +62,8 @@ shinyServer(function(input, output, session) {
   selected_filters <- reactive({
     if(length(input$selected_filter_names) == 0){
       return(1)} else {
-      filter_dataframe <- read_csv(paste0("_data/", input$select_data, "/settings/filters.csv"))
-      selected_filter_files <- paste0("_data/",
+      filter_dataframe <- read_csv(paste0(data_folder, input$select_data, "/settings/filters.csv"))
+      selected_filter_files <- paste0(data_folder,
                                       input$select_data, 
                                       "/filters/", 
                                       merge(x = filter_dataframe, 
@@ -105,7 +105,7 @@ shinyServer(function(input, output, session) {
     result = tryCatch({
       get_spatial_results(names_dataframe = names_dataframe(), 
                           selected_layers = selected_layers(), 
-                          path = paste0("_data/",
+                          path = paste0(data_folder,
                                         input$select_data,
                                         "/layers/"), 
                           filter_raster = selected_filters(), 
@@ -166,7 +166,7 @@ shinyServer(function(input, output, session) {
   })
   
   output$read_me_text <- renderUI({
-    includeMarkdown(paste0("_data/",
+    includeMarkdown(paste0(data_folder,
                            input$select_data,
                            "/read_me.md"))
   })
@@ -174,7 +174,7 @@ shinyServer(function(input, output, session) {
   output$data_tab_select_layers = renderUI({
     all_layers = 
             tryCatch(
-              expr = read_csv(paste0("_data/", input$select_data, "/settings/layers.csv"))$layer, 
+              expr = read_csv(paste0(data_folder, input$select_data, "/settings/layers.csv"))$layer, 
               error = function(e){return("Loading...")}, 
               warning = function(w){return("Loading...")})
 
@@ -184,7 +184,7 @@ shinyServer(function(input, output, session) {
   output$data_tab_description = renderText({
     
     the_text = 
-      tryCatch(as.character(read.csv(file = paste0("_data/",
+      tryCatch(as.character(read.csv(file = paste0(data_folder,
                                                  input$select_data, 
                                                  "/settings/layers.csv"),
                                    row.names = 1)[input$data_tab_selected_layer, 
@@ -201,10 +201,10 @@ shinyServer(function(input, output, session) {
 
     the_raster = tryCatch(
       expr = {
-      raster(paste0("_data/",
+      raster(paste0(data_folder,
                     input$select_data,
                     "/layers/",
-                    as.character(read.csv(file = paste0("_data/",
+                    as.character(read.csv(file = paste0(data_folder,
                                                         input$select_data,
                                                         "/settings/layers.csv"),
                                           row.names = 1)[input$data_tab_selected_layer, "preprocessed_raster"])))
@@ -281,7 +281,7 @@ shinyServer(function(input, output, session) {
                handlerExpr = {
                  updateCheckboxGroupInput(session, "selected_filter_names",
                                           label = h3("Filters"),
-                                          choices = as.list(read_csv(paste0("_data/",
+                                          choices = as.list(read_csv(paste0(data_folder,
                                                                             input$select_data,
                                                                             "/settings/filters.csv"))$filter)
                  )
