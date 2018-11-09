@@ -1,6 +1,9 @@
 # Libraries
 # global.R
 
+# Parameters
+data_folder <- "_data/"
+
 # Data
 ## shiny
 library(shiny)
